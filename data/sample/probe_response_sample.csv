@@ -1,6 +1,26 @@
 sensor_id,sensor_name,smiles,scaffold,analyte_name,role,modality,mechanism,solvent,ph,matrix,excitation_nm,emission_nm,sensor_concentration_um,analyte_concentration_um,response_ratio,lod_um,response_time_s,selectivity_index,evidence_grade
 SG-BIM-001,Bimane prototype,CN1C(=O)C(C)=C(C)N(C)C1=O,bimane,xylazine,target,fluorescence,PET,water-acetonitrile,7.4,buffer,380,470,10,100,2.1,5,60,4.2,A
 SG-BIM-001,Bimane prototype,CN1C(=O)C(C)=C(C)N(C)C1=O,bimane,fentanyl,interferent,fluorescence,PET,water-acetonitrile,7.4,buffer,380,470,10,100,1.1,,60,1.0,A
+SG-BIM-001,Bimane prototype,CN1C(=O)C(C)=C(C)N(C)C1=O,bimane,lidocaine,interferent,fluorescence,PET,water-acetonitrile,7.4,buffer,380,470,10,100,1.0,,60,0.9,B
 SG-BIM-002,Bimane triazole,CN1C(=O)C(C)=C(CN2N=NC=C2)N(C)C1=O,bimane,xylazine,target,fluorescence,ICT,water-acetonitrile,7.4,buffer,390,485,10,100,3.4,2,45,6.0,B
+SG-BIM-002,Bimane triazole,CN1C(=O)C(C)=C(CN2N=NC=C2)N(C)C1=O,bimane,caffeine,interferent,fluorescence,ICT,water-acetonitrile,7.4,buffer,390,485,10,100,1.2,,45,1.1,B
 SG-BIM-003,Bimane boronate,CN1C(=O)C(C)=C(CB(O)O)N(C)C1=O,bimane,hydrogen peroxide,target,fluorescence,reaction-based,water,7.4,buffer,375,460,5,50,5.0,1,120,8.0,B
+SG-BIM-003,Bimane boronate,CN1C(=O)C(C)=C(CB(O)O)N(C)C1=O,bimane,glucose,interferent,fluorescence,reaction-based,water,7.4,buffer,375,460,5,50,1.1,,120,1.0,C
+SG-BIM-004,Bimane Cu complex,CN1C(=O)C(CN2N=NC=C2)=C(CN2N=NC=C2)N(C)C1=O,bimane,water,target,fluorescence,coordination,acetonitrile,7.0,solvent,390,480,10,1000,6.8,50,30,9.0,A
+SG-BIM-004,Bimane Cu complex,CN1C(=O)C(CN2N=NC=C2)=C(CN2N=NC=C2)N(C)C1=O,bimane,methanol,interferent,fluorescence,coordination,acetonitrile,7.0,solvent,390,480,10,1000,1.4,,30,1.3,B
+SG-BIM-005,Bimane pH probe,CN1C(=O)C(CN)=C(C)N(C)C1=O,bimane,acidic pH,target,fluorescence,protonation,water,5.5,buffer,380,465,10,0,3.0,,20,4.5,B
 SG-BOD-001,BODIPY control,CC1=C(C)C2=[N+]1[B-](F)(F)N=C(C)C2=C,bodipy,xylazine,target,fluorescence,unknown,ethanol,7.4,buffer,500,520,2,100,1.2,,90,1.3,C
+SG-BOD-002,BODIPY thiol probe,CC1=C(C)C2=[N+]1[B-](F)(F)N=C(CS)C2=C,bodipy,cysteine,target,fluorescence,reaction-based,PBS,7.4,buffer,505,525,2,50,4.5,0.5,300,7.2,B
+SG-RHO-001,Rhodamine spirolactam,C1=CC=C2C(=C1)C(=O)OC3=C2C=CC=C3,rhodamine,Hg2+,target,fluorescence,ring-opening,water-ethanol,7.2,buffer,550,580,5,10,7.5,0.1,60,10.0,C
+SG-RHO-001,Rhodamine spirolactam,C1=CC=C2C(=C1)C(=O)OC3=C2C=CC=C3,rhodamine,Zn2+,interferent,fluorescence,ring-opening,water-ethanol,7.2,buffer,550,580,5,10,1.3,,60,1.2,C
+SG-COU-001,Coumarin fluoride probe,O=C1OC2=CC=CC=C2C=C1,coumarin,fluoride,target,fluorescence,desilylation,acetonitrile,7.0,solvent,365,455,10,100,5.8,1.5,180,8.5,C
+SG-COU-002,Coumarin pH sensor,O=C1OC2=CC(O)=CC=C2C=C1,coumarin,alkaline pH,target,fluorescence,deprotonation,water,9.0,buffer,360,450,10,0,3.9,,20,5.5,C
+SG-NAP-001,Naphthalimide Zn probe,O=C1NC(=O)C2=CC=CC=C12,naphthalimide,Zn2+,target,fluorescence,CHEF,water-DMSO,7.4,buffer,430,535,5,10,6.1,0.2,40,8.2,C
+SG-NAP-001,Naphthalimide Zn probe,O=C1NC(=O)C2=CC=CC=C12,naphthalimide,Ca2+,interferent,fluorescence,CHEF,water-DMSO,7.4,buffer,430,535,5,10,1.2,,40,1.1,C
+SG-CYA-001,Cyanine viscosity probe,C1=CC=CC=C1C=C[CH+]C2=CC=CC=C2,cyanine,viscosity,target,fluorescence,TICT,glycerol-water,7.4,solution,640,710,1,0,4.2,,10,6.0,C
+SG-AIE-001,AIE aggregate probe,C1=CC=C(C=C1)C=C(C2=CC=CC=C2)C3=CC=CC=C3,tetraphenylethene,aggregation,target,fluorescence,AIE,water-THF,7.0,solution,365,480,10,0,9.0,,15,12.0,C
+SG-COL-001,Colorimetric xylazine sensor,C1=CC=CC=C1N=N C2=CC=CC=C2,azo-dye,xylazine,target,colorimetric,host-guest,water,7.4,buffer,,520,20,100,1.8,10,120,2.5,D
+SG-ELE-001,Electrochemical dopamine sensor,C1=CC(=CC=C1CCN)O,polymer-electrode,dopamine,target,electrochemical,redox,PBS,7.4,buffer,,0,0,10,12.0,0.05,5,9.5,C
+SG-RAM-001,SERS fentanyl assay,C1=CC=CC=C1,nanoparticle,fentanyl,target,raman,SERS,water,7.4,buffer,785,1000,0,10,3.2,0.2,30,5.0,D
+SG-CHEM-001,Chemiluminescent peroxide probe,O=C1OC2=CC=CC=C2OO1,luminol-like,hydrogen peroxide,target,chemiluminescence,oxidation,water,8.5,buffer,,425,10,50,7.0,0.2,10,10.5,C
+SG-APT-001,Aptamer-linked xylazine sensor,APTAMER_SEQUENCE_PLACEHOLDER,aptamer,xylazine,target,fluorescence,aptamer-displacement,PBS,7.4,buffer,490,520,0.1,10,2.8,0.8,300,4.0,D

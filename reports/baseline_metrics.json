@@ -1,0 +1,8 @@
+{
+  "n": 25,
+  "target": "response_ratio",
+  "mae": 2.280789333333333,
+  "rmse": 2.8278979484867466,
+  "r2": 0.010710248442330705,
+  "warning": "Small sample baseline. Do not overinterpret."
+}
