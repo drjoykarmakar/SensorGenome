@@ -1,0 +1,1 @@
+sensor_id,sensor_name,probe_smiles,probe_family,target_analyte,sensing_modality,response_type,sensing_mechanism,solvent,pH,excitation_nm,emission_nm,detection_limit,linear_range,interferents_tested,selectivity_result,response_time,doi,year,notes,curation_confidence
