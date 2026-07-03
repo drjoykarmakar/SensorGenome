@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SensorGenome Probe Response Record",
+  "type": "object",
+  "required": [
+    "sensor_id", "sensor_name", "smiles", "analyte_name", "role", "modality",
+    "mechanism", "solvent", "ph", "matrix", "response_ratio", "evidence_grade"
+  ],
+  "properties": {
+    "sensor_id": {"type": "string"},
+    "sensor_name": {"type": "string"},
+    "smiles": {"type": "string"},
+    "scaffold": {"type": "string"},
+    "analyte_name": {"type": "string"},
+    "role": {"enum": ["target", "interferent", "control"]},
+    "modality": {"enum": ["fluorescence", "colorimetric", "raman", "electrochemical", "chemiluminescence", "other"]},
+    "mechanism": {"type": "string"},
+    "solvent": {"type": "string"},
+    "ph": {"type": "number", "minimum": 0, "maximum": 14},
+    "matrix": {"type": "string"},
+    "excitation_nm": {"type": ["number", "null"]},
+    "emission_nm": {"type": ["number", "null"]},
+    "sensor_concentration_um": {"type": ["number", "null"]},
+    "analyte_concentration_um": {"type": ["number", "null"]},
+    "response_ratio": {"type": "number", "minimum": 0},
+    "lod_um": {"type": ["number", "null"]},
+    "response_time_s": {"type": ["number", "null"]},
+    "selectivity_index": {"type": ["number", "null"]},
+    "evidence_grade": {"enum": ["A", "B", "C", "D"]}
+  }
+}

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sensorgenome"
+version = "0.1.0"
+description = "Open benchmark and active-learning platform for AI-guided molecular sensing."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Joy Karmakar"}]
+keywords = ["cheminformatics", "molecular sensing", "fluorescence", "active learning", "benchmark", "AI for science"]
+dependencies = [
+  "pandas>=2.0",
+  "numpy>=1.24",
+  "scikit-learn>=1.3",
+  "pydantic>=2.0",
+  "typer>=0.9",
+  "fastapi>=0.110",
+  "uvicorn>=0.23",
+  "joblib>=1.3"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.3"]
+chem = ["rdkit-pypi>=2022.9.5"]
+
+[project.scripts]
+sensorgenome = "sensorgenome.cli.main:app"
+
+[tool.setuptools.packages.find]
+include = ["sensorgenome*"]
+
+[tool.ruff]
+line-length = 100
